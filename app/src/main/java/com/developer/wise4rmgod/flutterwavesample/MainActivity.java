@@ -10,7 +10,6 @@ import android.widget.Toast;
 
 import com.flutterwave.raveandroid.RaveConstants;
 import com.flutterwave.raveandroid.RavePayActivity;
-import com.flutterwave.raveandroid.RavePayManager;
 
 public class MainActivity extends AppCompatActivity {
     Button payButton;
@@ -22,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         payButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(),PayActivity.class);
+                Intent intent= new Intent(getApplicationContext(), JavaPaymentActivity.class);
                 startActivity(intent);
             }
         });

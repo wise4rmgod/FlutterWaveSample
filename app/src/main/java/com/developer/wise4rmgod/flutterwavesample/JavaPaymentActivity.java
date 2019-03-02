@@ -13,7 +13,7 @@ import com.flutterwave.raveandroid.RaveConstants;
 import com.flutterwave.raveandroid.RavePayActivity;
 import com.flutterwave.raveandroid.RavePayManager;
 
-public class PayActivity extends AppCompatActivity {
+public class JavaPaymentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class PayActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new RavePayManager(PayActivity.this)
+                new RavePayManager(JavaPaymentActivity.this)
                         .setAmount(200.00)
                         .setCountry("NG")
                         .setCurrency("NGN")
